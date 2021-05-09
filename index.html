@@ -608,46 +608,121 @@
             </li>
           </ul>
         </div>
-        <div class="invite-section-sign-in">
-          <section class="section" id="contact-form">
-            <h2 class="invite-item">Подпишитесь на рассылку</h2>
-            <form class="contact-form">
-              <input
-                type="email"
-                name="user-email"
-                class="contact-form-field"
-                placeholder="E-mail"
-                required
-              />
-              <button type="submit" class="btn-sign-in">
-                Подписаться
-                <svg class="auth-nav-icon-sign-in" width="24" height="24">
-                  <use href="./images/icons/sprite6.svg#icon-icon-send"></use>
-                </svg>
-              </button>
-            </form>
-          </section>
+        <div class="subscribe-email">
+          <label for="sub-email" class="bot-sub-email-label"
+            >Подпишитесь на рассылку
+          </label>
+          <input
+            type="text"
+            name="sub-email"
+            id="sub-email"
+            class="bot-sub-email-box"
+            placeholder="E-mail"
+          />
+        </div>
+        <div class="bot-telegram-btn">
+          <button type="submit" class="sub-telegram-btn">
+            <div class="sub-telegram-btn-text">Подписаться</div>
+            <svg class="bot-telegram-svg">
+              <use href="./images/icons/sprite6.svg#icon-icon-send"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden .modal-window" data-modal>
       <div class="modal">
-        <button class="modal-btn-close" data-modal-close>
-          <svg class="close-modal-svg">
-            <use
-              href="./images/icons/symbol-defs-sprite.svg#icon-close-black-18dp-2-1"
-            ></use>
-          </svg>
-        </button>
-        <p class="modal-title">Title</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate
-          minima error ipsam in. Numquam ipsam ullam nihil nesciunt eaque, nulla
-          vero dolorum. Dolorum recusandae aspernatur, consequuntur minima vitae
-          expedita rerum.
-        </p>
+        <div class="modal-container">
+          <button data-modal-close class="modal-btn-close">
+            <svg class="close-modal-svg">
+              <use
+                href="./images/icons/symbol-defs-sprite.svg#icon-close-black-18dp-2-1"
+              ></use>
+            </svg>
+          </button>
+          <div>
+            <h2 class="modal-titile">
+              Оставьте свои данные, мы вам перезвоним
+            </h2>
+
+            <form class="modal-form">
+              <div class="modal-form-name mf-margin">
+                <label for="mf-name" class="mf-label">Имя</label>
+                <div class="mf-element">
+                  <svg class="mf-svg">
+                    <use href="./images/icons/sprite6.svg#icon-Vector"></use>
+                  </svg>
+                  <input
+                    type="text"
+                    name="name"
+                    id="mf-name"
+                    class="mf-input-boder mf-input-height mf-input-text mf-padding-svg mf-input-point"
+                    autofocus
+                  />
+                </div>
+              </div>
+
+              <div class="modal-form-tel mf-margin">
+                <label for="mf-tel" class="mf-label">Телефон</label>
+                <div class="mf-element">
+                  <svg class="mf-svg">
+                    <use href="./images/icons/sprite6.svg#icon-Vector-1"></use>
+                  </svg>
+                  <input
+                    type="tel"
+                    name="tel"
+                    id="mf-tel"
+                    class="mf-input-boder mf-input-height mf-input-text mf-padding-svg mf-input-point"
+                  />
+                </div>
+              </div>
+
+              <div class="modal-form-email mf-margin">
+                <label for="mf-email" class="mf-label">Почта</label>
+                <div class="mf-element">
+                  <svg class="mf-svg">
+                    <use href="./images/icons/sprite6.svg#icon-Vector-2"></use>
+                  </svg>
+                  <input
+                    type="email"
+                    name="email"
+                    id="mf-email"
+                    class="mf-input-boder mf-input-height mf-input-text mf-padding-svg mf-input-point"
+                  />
+                </div>
+              </div>
+
+              <div class="modal-form-comment mf-element mf-margin-comment">
+                <label for="mf-comment" class="mf-label">Комментарий</label>
+                <textarea
+                  name="comment"
+                  id="mf-comment"
+                  class="mf-textarea mf-input-point"
+                  rows="10"
+                  placeholder="Введите текст"
+                ></textarea>
+              </div>
+
+              <div class="mf-checkbox">
+                <input
+                  type="checkbox"
+                  id="mf-checkbox"
+                  name="checkbox-policy"
+                  class="visually-hidden check-box-condition"
+                />
+                <label for="mf-checkbox" class="mf-checkbox-label">
+                  Соглашаюсь с рассылкой и принимаю &nbsp;
+                  <a href="" target="" class="mf-policy">Условия договора</a>
+                </label>
+              </div>
+
+              <button class="mf-button-send" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
