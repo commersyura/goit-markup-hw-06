@@ -760,3 +760,46 @@ img {
   align-items: center;
   text-align: center;
 }
+.contact-form-field {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.btn-sign-in {
+  width: 200px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+  align-content: center;
+  margin-top: 0;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--alt-title-cl);
+  background-color: #2196f3;
+  border-color: transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.invite-section-sign-in {
+  margin-left: 93px;
+}
+.contact-form {
+  margin-top: 0;
+}
+.auth-nav-icon-sign-in {
+  margin-left: 10px;
+  fill: currentColor;
+
+  left: 83.31%;
+  right: 15.19%;
+  top: 93.03%;
+  bottom: 5.69%;
+}
