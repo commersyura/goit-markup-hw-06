@@ -234,7 +234,6 @@ img {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  /**/
 }
 .social-icons {
   display: inline-flex;
@@ -247,6 +246,7 @@ img {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  transition-duration: 2950ms;
 }
 .about-icons-svg {
   height: 70px;
@@ -287,10 +287,9 @@ img {
 .social-icons-link:hover .social-icons-svg,
 .social-icons-link:focus .social-icons-svg {
   fill: #ffffff;
-  background-color: var(--accent-cl);
+  /*background-color: var(--accent-cl);
   color: #2196f3;
-  opacity: 1;
-  transition-duration: 2950ms;
+  opacity: 1;*/
 }
 .customers-icons-link {
   display: flex;
@@ -302,7 +301,7 @@ img {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  transition-property: fill, color, background-color;
+  transition-property: color, border-color;
   transition-duration: 2250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -382,7 +381,7 @@ img {
 .invite-icons-link-footer:hover .invite-icons-svg,
 .invite-icons-link-footer:focus .invite-icons-svg {
   fill: #ffffff;
-  background-color: var(--accent-cl);
+  /*background-color: var(--accent-cl);*/
 }
 .btn {
   font-weight: 500;
@@ -591,20 +590,20 @@ img {
 }
 .team-name-portfolio-link {
   text-decoration: none;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  /*box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);*/
   transition-property: background-color, box-shadow, color;
   transition-duration: 2250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+  display: block;
   /*opacity: 1;
   transition-duration: 250ms;*/
 }
 
 .team-name-portfolio-link:hover .thumb-description,
 .team-name-portfolio-link:focus .thumb-description {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);*/
   transform: translateY(0);
   /*transition-property: background-color, box-shadow, color;
   transition-duration: 2250ms;
@@ -612,8 +611,8 @@ img {
 */
 }
 
-.team-name-portfolio:hover,
-.team-name-portfolio:focus {
+.team-name-portfolio-link:hover,
+.team-name-portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
